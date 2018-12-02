@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user-deployment
+  name: ride-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: user
+      app: ride
   template:
     metadata:
       labels:
-        app: user
+        app: ride
     spec:
       containers:
       - image: glumac/uberapp-rides:0.1
-        name: user
+        name: ride
         imagePullPolicy: "Always"
         env:
           - name: KUMULUZEE_DISCOVERY_CLUSTER
