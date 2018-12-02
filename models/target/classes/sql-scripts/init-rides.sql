@@ -1,0 +1,1 @@
+INSERT INTO ride (initial_departure_time, initial_payment, initial_passengers_num, status, driver_id) VALUES (TIMESTAMP '1962-12-01 00:00:00', 0, 0, 'Inactive' ,0);
