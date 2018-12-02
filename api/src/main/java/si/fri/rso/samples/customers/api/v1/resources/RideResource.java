@@ -4,12 +4,8 @@ import com.kumuluz.ee.common.runtime.EeRuntime;
 import com.kumuluz.ee.logs.cdi.Log;
 import si.fri.rso.samples.customers.api.v1.dtos.HealthDto;
 import si.fri.rso.samples.customers.api.v1.dtos.LoadDto;
-import si.fri.rso.samples.customers.models.entities.Customer;
 import si.fri.rso.samples.customers.models.entities.Ride;
-import si.fri.rso.samples.customers.models.entities.User;
-import si.fri.rso.samples.customers.services.beans.CustomersBean;
 import si.fri.rso.samples.customers.services.beans.RidesBean;
-import si.fri.rso.samples.customers.services.beans.UsersBean;
 import si.fri.rso.samples.customers.services.configuration.AppProperties;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -31,7 +27,7 @@ import java.util.logging.Logger;
 @Log
 public class RideResource {
 
-    private Logger log = Logger.getLogger(UserResource.class.getName());
+    private Logger log = Logger.getLogger(RideResource.class.getName());
 
     @Inject
     private AppProperties appProperties;

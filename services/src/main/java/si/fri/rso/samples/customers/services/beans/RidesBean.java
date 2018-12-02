@@ -5,9 +5,7 @@ import com.kumuluz.ee.rest.beans.QueryParameters;
 import com.kumuluz.ee.rest.utils.JPAUtils;
 import org.eclipse.microprofile.metrics.annotation.Timed;
 import si.fri.rso.samples.customers.models.dtos.Order;
-import si.fri.rso.samples.customers.models.entities.Customer;
 import si.fri.rso.samples.customers.models.entities.Ride;
-import si.fri.rso.samples.customers.models.entities.User;
 import si.fri.rso.samples.customers.services.configuration.AppProperties;
 
 import javax.annotation.PostConstruct;
