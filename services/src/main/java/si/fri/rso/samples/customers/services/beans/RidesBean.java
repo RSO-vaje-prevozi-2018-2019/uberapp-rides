@@ -69,6 +69,16 @@ public class RidesBean {
         return ride;
     }
 
+    public int getDriver(Integer rideId) {
+
+        Ride ride = em.createQuery("SELECT r FROM ride r WHERE r.id = :rideId", Ride.class )
+                .setParameter("rideId", rideId)
+                .setMaxResults(1)
+                .getSingleResult();
+
+        return ride.getDriverId();
+    }
+
     public Ride createRide(Ride ride) {
 
         try {

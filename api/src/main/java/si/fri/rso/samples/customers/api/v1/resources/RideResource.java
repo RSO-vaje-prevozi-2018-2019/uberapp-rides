@@ -59,5 +59,20 @@ public class RideResource {
         return Response.status(Response.Status.OK).entity(ride).build();
     }
 
+    @GET
+    @Path("/{rideId}/driver")
+    public Response getDriver(@PathParam("rideId") Integer rideId) {
+
+        Integer driverId = ridesBean.getDriver(rideId);
+
+        if (driverId == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.status(Response.Status.OK).entity(driverId).build();
+    }
+
+
+
 
 }
