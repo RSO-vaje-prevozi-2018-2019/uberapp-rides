@@ -37,6 +37,12 @@ public class Ride {
     @Column(name = "driver_id")
     private Integer driverId;
 
+    @Column(name = "initial_latitute")
+    private Double initialLatitute;
+
+    @Column(name = "initial_longitude")
+    private Double initialLongitude;
+
 
 
 
@@ -88,9 +94,19 @@ public class Ride {
     }
 
 
+    public Double getInitialLatitute() {
+        return initialLatitute;
+    }
 
+    public void setInitialLatitute(Double initialLatitute) {
+        this.initialLatitute = initialLatitute;
+    }
 
+    public Double getInitialLongitude() {
+        return initialLongitude;
+    }
 
-
-
+    public void setInitialLongitude(Double initialLongitude) {
+        this.initialLongitude = initialLongitude;
+    }
 }
